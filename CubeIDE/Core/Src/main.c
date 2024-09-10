@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include"exercise3.h"
+#include"exercise5.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -93,7 +93,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	 exercise3_run();
+	 exercise5_run();
 
 	 HAL_Delay(1000);
     /* USER CODE END WHILE */
@@ -148,12 +148,32 @@ static void MX_GPIO_Init(void)
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, SEG_A1_Pin|SEG_B1_Pin|SEG_C1_Pin|SEG_D1_Pin
+                          |SEG_E1_Pin|SEG_F1_Pin|SEG_G1_Pin|SEG_A2_Pin
+                          |SEG_B2_Pin|SEG_C2_Pin|SEG_D2_Pin|SEG_E2_Pin
+                          |SEG_F2_Pin|SEG_G2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LED_1_Pin|LED_2_Pin|LED_3_Pin|LED_11_Pin
                           |LED_12_Pin|LED_4_Pin|LED_5_Pin|LED_6_Pin
                           |LED_7_Pin|LED_8_Pin|LED_9_Pin|LED_10_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : SEG_A1_Pin SEG_B1_Pin SEG_C1_Pin SEG_D1_Pin
+                           SEG_E1_Pin SEG_F1_Pin SEG_G1_Pin SEG_A2_Pin
+                           SEG_B2_Pin SEG_C2_Pin SEG_D2_Pin SEG_E2_Pin
+                           SEG_F2_Pin SEG_G2_Pin */
+  GPIO_InitStruct.Pin = SEG_A1_Pin|SEG_B1_Pin|SEG_C1_Pin|SEG_D1_Pin
+                          |SEG_E1_Pin|SEG_F1_Pin|SEG_G1_Pin|SEG_A2_Pin
+                          |SEG_B2_Pin|SEG_C2_Pin|SEG_D2_Pin|SEG_E2_Pin
+                          |SEG_F2_Pin|SEG_G2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LED_1_Pin LED_2_Pin LED_3_Pin LED_11_Pin
                            LED_12_Pin LED_4_Pin LED_5_Pin LED_6_Pin

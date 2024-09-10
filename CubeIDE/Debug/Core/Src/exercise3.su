@@ -1,8 +1,0 @@
-exercise3.c:17:6:init_exercise3	4	static
-exercise3.c:19:6:red_on_horizontal	8	static
-exercise3.c:33:6:green_on_horizontal	8	static
-exercise3.c:46:6:yellow_on_horizontal	8	static
-exercise3.c:60:6:red_on_vertical	8	static
-exercise3.c:74:6:green_on_vertical	8	static
-exercise3.c:87:6:yellow_on_vertical	8	static
-exercise3.c:100:6:exercise3_run	8	static

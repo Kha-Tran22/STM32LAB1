@@ -1,20 +1,20 @@
 /*
- * exercise3.c
+ * exercise5.c
  *
  *  Created on: Sep 10, 2024
  *      Author: tuank
  */
 
-#include"exercise3.h"
+#include"exercise5.h"
 
 
 int state_horizontal = RED;
-int state_vertical = GREEN;
-int counter_horizontal = 0,
-	counter_vertical = 0;
+	state_vertical = GREEN,
+	counter_horizontal = 5,
+	counter_vertical = 3;
 
 
-void init_exercise3(){}
+void init_exercise5(){}
 
 void red_on_horizontal()
 {
@@ -97,35 +97,87 @@ void yellow_on_vertical()
 	HAL_GPIO_WritePin(LED_12_GPIO_Port, LED_12_Pin, GPIO_PIN_RESET); // yellow led on
 }
 
-void exercise3_run()
+int counter = 0;
+
+char seg[10] =
+{
+		0x40,
+		0x79,
+		0x24,
+		0x30,
+		0x19,
+		0x12,
+		0x02,
+		0x78,
+		0x00,
+		0x10
+};
+
+void display_number1(int number)
+{
+	char code = seg[number];
+
+	// Kiem tra bit tuong ung SEG cua so can hien thi neu = 1 thi SEG OFF
+	HAL_GPIO_WritePin(SEG_A1_GPIO_Port, SEG_A1_Pin, (code & 0x01) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_B1_GPIO_Port, SEG_B1_Pin, (code & 0x02) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_C1_GPIO_Port, SEG_C1_Pin, (code & 0x04) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_D1_GPIO_Port, SEG_D1_Pin, (code & 0x08) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_E1_GPIO_Port, SEG_E1_Pin, (code & 0x10) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_F1_GPIO_Port, SEG_F1_Pin, (code & 0x20) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_G1_GPIO_Port, SEG_G1_Pin, (code & 0x40) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+}
+
+void display_number2(int number)
+{
+	char code = seg[number];
+
+	// Kiem tra bit tuong ung SEG cua so can hien thi neu = 1 thi SEG OFF
+	HAL_GPIO_WritePin(SEG_A2_GPIO_Port, SEG_A2_Pin, (code & 0x01) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_B2_GPIO_Port, SEG_B2_Pin, (code & 0x02) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_C2_GPIO_Port, SEG_C2_Pin, (code & 0x04) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_D2_GPIO_Port, SEG_D2_Pin, (code & 0x08) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_E2_GPIO_Port, SEG_E2_Pin, (code & 0x10) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_F2_GPIO_Port, SEG_F2_Pin, (code & 0x20) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SEG_G2_GPIO_Port, SEG_G2_Pin, (code & 0x40) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+}
+
+
+
+
+
+
+void exercise5_run()
 {
 	switch(state_horizontal)
 	{
 		case RED:
 			red_on_horizontal();
-			counter_horizontal++;
-			if (counter_horizontal >= 5)
+			counter_horizontal--;
+			display_number1(counter_horizontal);
+			if (counter_horizontal <= 0)
 			{
 				state_horizontal = GREEN;
-				counter_horizontal = 0;
+				counter_horizontal = 3;
 			}
 			break;
 		case GREEN:
 			green_on_horizontal();
-			counter_horizontal++;
-			if (counter_horizontal >= 3)
+			counter_horizontal--;
+			display_number1(counter_horizontal);
+			if (counter_horizontal <= 0)
 			{
 				state_horizontal = YELLOW;
-				counter_horizontal = 0;
+				counter_horizontal = 2;
 			}
 			break;
 		case YELLOW:
 			yellow_on_horizontal();
-			counter_horizontal++;
-			if (counter_horizontal >= 2)
+			counter_horizontal--;
+			display_number1(counter_horizontal);
+			if (counter_horizontal <= 0)
 			{
 				state_horizontal = RED;
-				counter_horizontal = 0;
+				counter_horizontal = 5;
 			}
 			break;
 		default:
@@ -138,29 +190,32 @@ void exercise3_run()
 		{
 			case RED:
 				red_on_vertical();
-				counter_vertical++;
-				if (counter_vertical >= 5)
+				counter_vertical--;
+				display_number2(counter_vertical);
+				if (counter_vertical <= 0)
 				{
 					state_vertical = GREEN;
-					counter_vertical = 0;
+					counter_vertical = 3;
 				}
 				break;
 			case GREEN:
 				green_on_vertical();
-				counter_vertical++;
-				if (counter_vertical >= 3)
+				counter_vertical--;
+				display_number2(counter_vertical);
+				if (counter_vertical <= 0)
 				{
 					state_vertical = YELLOW;
-					counter_vertical = 0;
+					counter_vertical = 2;
 				}
 				break;
 			case YELLOW:
 				yellow_on_vertical();
-				counter_vertical++;
-				if (counter_vertical >= 2)
+				counter_vertical--;
+				display_number2(counter_vertical);
+				if (counter_vertical <= 0)
 				{
 					state_vertical = RED;
-					counter_vertical = 0;
+					counter_vertical = 5;
 				}
 				break;
 			default:
