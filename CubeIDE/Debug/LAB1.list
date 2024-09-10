@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  0001583d  00000000  00000000  00024b70  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00004ecb  00000000  00000000  0003a3ad  2**0
+ 17 .debug_line   00004ed1  00000000  00000000  0003a3ad  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00079da5  00000000  00000000  0003f278  2**0
+ 18 .debug_str    00079da5  00000000  00000000  0003f27e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000b901d  2**0
+ 19 .comment      00000053  00000000  00000000  000b9023  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000e68  00000000  00000000  000b9070  2**2
+ 20 .debug_frame  00000e68  00000000  00000000  000b9078  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -677,107 +677,107 @@ void exercise5_run()
  8000560:	d002      	beq.n	8000568 <exercise5_run+0xc8>
  8000562:	2b02      	cmp	r3, #2
  8000564:	d02e      	beq.n	80005c4 <exercise5_run+0x124>
-					state_vertical = RED;
-					counter_vertical = 5;
-				}
-				break;
-			default:
+				state_vertical = RED;
+				counter_vertical = 5;
+			}
+			break;
+		default:
 				break;
  8000566:	e044      	b.n	80005f2 <exercise5_run+0x152>
-				red_on_vertical();
+			red_on_vertical();
  8000568:	f7ff fe62 	bl	8000230 <red_on_vertical>
-				counter_vertical--;
+			counter_vertical--;
  800056c:	4b28      	ldr	r3, [pc, #160]	; (8000610 <exercise5_run+0x170>)
  800056e:	681b      	ldr	r3, [r3, #0]
  8000570:	3b01      	subs	r3, #1
  8000572:	4a27      	ldr	r2, [pc, #156]	; (8000610 <exercise5_run+0x170>)
  8000574:	6013      	str	r3, [r2, #0]
-				display_number2(counter_vertical);
+			display_number2(counter_vertical);
  8000576:	4b26      	ldr	r3, [pc, #152]	; (8000610 <exercise5_run+0x170>)
  8000578:	681b      	ldr	r3, [r3, #0]
  800057a:	4618      	mov	r0, r3
  800057c:	f7ff ff2c 	bl	80003d8 <display_number2>
-				if (counter_vertical <= 0)
+			if (counter_vertical <= 0)
  8000580:	4b23      	ldr	r3, [pc, #140]	; (8000610 <exercise5_run+0x170>)
  8000582:	681b      	ldr	r3, [r3, #0]
  8000584:	2b00      	cmp	r3, #0
  8000586:	dc36      	bgt.n	80005f6 <exercise5_run+0x156>
-					state_vertical = GREEN;
+				state_vertical = GREEN;
  8000588:	4b20      	ldr	r3, [pc, #128]	; (800060c <exercise5_run+0x16c>)
  800058a:	2203      	movs	r2, #3
  800058c:	601a      	str	r2, [r3, #0]
-					counter_vertical = 3;
+				counter_vertical = 3;
  800058e:	4b20      	ldr	r3, [pc, #128]	; (8000610 <exercise5_run+0x170>)
  8000590:	2203      	movs	r2, #3
  8000592:	601a      	str	r2, [r3, #0]
-				break;
+			break;
  8000594:	e02f      	b.n	80005f6 <exercise5_run+0x156>
-				green_on_vertical();
+			green_on_vertical();
  8000596:	f7ff fe73 	bl	8000280 <green_on_vertical>
-				counter_vertical--;
+			counter_vertical--;
  800059a:	4b1d      	ldr	r3, [pc, #116]	; (8000610 <exercise5_run+0x170>)
  800059c:	681b      	ldr	r3, [r3, #0]
  800059e:	3b01      	subs	r3, #1
  80005a0:	4a1b      	ldr	r2, [pc, #108]	; (8000610 <exercise5_run+0x170>)
  80005a2:	6013      	str	r3, [r2, #0]
-				display_number2(counter_vertical);
+			display_number2(counter_vertical);
  80005a4:	4b1a      	ldr	r3, [pc, #104]	; (8000610 <exercise5_run+0x170>)
  80005a6:	681b      	ldr	r3, [r3, #0]
  80005a8:	4618      	mov	r0, r3
  80005aa:	f7ff ff15 	bl	80003d8 <display_number2>
-				if (counter_vertical <= 0)
+			if (counter_vertical <= 0)
  80005ae:	4b18      	ldr	r3, [pc, #96]	; (8000610 <exercise5_run+0x170>)
  80005b0:	681b      	ldr	r3, [r3, #0]
  80005b2:	2b00      	cmp	r3, #0
  80005b4:	dc21      	bgt.n	80005fa <exercise5_run+0x15a>
-					state_vertical = YELLOW;
+				state_vertical = YELLOW;
  80005b6:	4b15      	ldr	r3, [pc, #84]	; (800060c <exercise5_run+0x16c>)
  80005b8:	2202      	movs	r2, #2
  80005ba:	601a      	str	r2, [r3, #0]
-					counter_vertical = 2;
+				counter_vertical = 2;
  80005bc:	4b14      	ldr	r3, [pc, #80]	; (8000610 <exercise5_run+0x170>)
  80005be:	2202      	movs	r2, #2
  80005c0:	601a      	str	r2, [r3, #0]
-				break;
+			break;
  80005c2:	e01a      	b.n	80005fa <exercise5_run+0x15a>
-				yellow_on_vertical();
+			yellow_on_vertical();
  80005c4:	f7ff fe84 	bl	80002d0 <yellow_on_vertical>
-				counter_vertical--;
+			counter_vertical--;
  80005c8:	4b11      	ldr	r3, [pc, #68]	; (8000610 <exercise5_run+0x170>)
  80005ca:	681b      	ldr	r3, [r3, #0]
  80005cc:	3b01      	subs	r3, #1
  80005ce:	4a10      	ldr	r2, [pc, #64]	; (8000610 <exercise5_run+0x170>)
  80005d0:	6013      	str	r3, [r2, #0]
-				display_number2(counter_vertical);
+			display_number2(counter_vertical);
  80005d2:	4b0f      	ldr	r3, [pc, #60]	; (8000610 <exercise5_run+0x170>)
  80005d4:	681b      	ldr	r3, [r3, #0]
  80005d6:	4618      	mov	r0, r3
  80005d8:	f7ff fefe 	bl	80003d8 <display_number2>
-				if (counter_vertical <= 0)
+			if (counter_vertical <= 0)
  80005dc:	4b0c      	ldr	r3, [pc, #48]	; (8000610 <exercise5_run+0x170>)
  80005de:	681b      	ldr	r3, [r3, #0]
  80005e0:	2b00      	cmp	r3, #0
  80005e2:	dc0c      	bgt.n	80005fe <exercise5_run+0x15e>
-					state_vertical = RED;
+				state_vertical = RED;
  80005e4:	4b09      	ldr	r3, [pc, #36]	; (800060c <exercise5_run+0x16c>)
  80005e6:	2201      	movs	r2, #1
  80005e8:	601a      	str	r2, [r3, #0]
-					counter_vertical = 5;
+				counter_vertical = 5;
  80005ea:	4b09      	ldr	r3, [pc, #36]	; (8000610 <exercise5_run+0x170>)
  80005ec:	2205      	movs	r2, #5
  80005ee:	601a      	str	r2, [r3, #0]
-				break;
+			break;
  80005f0:	e005      	b.n	80005fe <exercise5_run+0x15e>
 				break;
  80005f2:	bf00      	nop
  80005f4:	e004      	b.n	8000600 <exercise5_run+0x160>
-				break;
+			break;
  80005f6:	bf00      	nop
  80005f8:	e002      	b.n	8000600 <exercise5_run+0x160>
-				break;
+			break;
  80005fa:	bf00      	nop
  80005fc:	e000      	b.n	8000600 <exercise5_run+0x160>
-				break;
+			break;
  80005fe:	bf00      	nop
 		}
 }

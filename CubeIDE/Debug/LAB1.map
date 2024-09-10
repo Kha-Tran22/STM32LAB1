@@ -2439,17 +2439,17 @@ LOAD k:/stm32cubeide/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.id
  .debug_macro   0x00000000000154bc      0x1ed ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
  .debug_macro   0x00000000000156a9      0x194 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
-.debug_line     0x0000000000000000     0x4ecb
- .debug_line    0x0000000000000000      0x84d ./Core/Src/exercise5.o
- .debug_line    0x000000000000084d      0x710 ./Core/Src/main.o
- .debug_line    0x0000000000000f5d      0x65d ./Core/Src/stm32f1xx_hal_msp.o
- .debug_line    0x00000000000015ba      0x71e ./Core/Src/stm32f1xx_it.o
- .debug_line    0x0000000000001cd8      0x6da ./Core/Src/system_stm32f1xx.o
- .debug_line    0x00000000000023b2       0x86 ./Core/Startup/startup_stm32f103c6ux.o
- .debug_line    0x0000000000002438      0x907 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_line    0x0000000000002d3f      0xaef ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_line    0x000000000000382e      0x98a ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_line    0x00000000000041b8      0xd13 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+.debug_line     0x0000000000000000     0x4ed1
+ .debug_line    0x0000000000000000      0x853 ./Core/Src/exercise5.o
+ .debug_line    0x0000000000000853      0x710 ./Core/Src/main.o
+ .debug_line    0x0000000000000f63      0x65d ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_line    0x00000000000015c0      0x71e ./Core/Src/stm32f1xx_it.o
+ .debug_line    0x0000000000001cde      0x6da ./Core/Src/system_stm32f1xx.o
+ .debug_line    0x00000000000023b8       0x86 ./Core/Startup/startup_stm32f103c6ux.o
+ .debug_line    0x000000000000243e      0x907 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_line    0x0000000000002d45      0xaef ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_line    0x0000000000003834      0x98a ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_line    0x00000000000041be      0xd13 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
 .debug_str      0x0000000000000000    0x79da5
  .debug_str     0x0000000000000000    0x78c69 ./Core/Src/exercise5.o

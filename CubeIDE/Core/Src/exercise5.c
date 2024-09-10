@@ -218,7 +218,7 @@ void exercise5_run()
 			}
 			break;
 		default:
-			break;
+				break;
 		}
 }
 
