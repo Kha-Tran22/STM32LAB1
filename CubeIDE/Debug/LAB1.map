@@ -2357,63 +2357,63 @@ LOAD k:/stm32cubeide/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.id
  .debug_ranges  0x0000000000000298       0x48 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
  .debug_ranges  0x00000000000002e0       0x80 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
-.debug_macro    0x0000000000000000    0x1573a
- .debug_macro   0x0000000000000000      0x19c ./Core/Src/exercise4.o
- .debug_macro   0x000000000000019c      0xa9c ./Core/Src/exercise4.o
- .debug_macro   0x0000000000000c38      0x20f ./Core/Src/exercise4.o
- .debug_macro   0x0000000000000e47       0x2e ./Core/Src/exercise4.o
- .debug_macro   0x0000000000000e75       0x22 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000000e97       0x22 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000000eb9       0x8e ./Core/Src/exercise4.o
- .debug_macro   0x0000000000000f47       0x51 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000000f98      0x103 ./Core/Src/exercise4.o
- .debug_macro   0x000000000000109b       0x6a ./Core/Src/exercise4.o
- .debug_macro   0x0000000000001105      0x1df ./Core/Src/exercise4.o
- .debug_macro   0x00000000000012e4       0x1c ./Core/Src/exercise4.o
- .debug_macro   0x0000000000001300       0x22 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000001322       0xc3 ./Core/Src/exercise4.o
- .debug_macro   0x00000000000013e5      0xd23 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000002108     0xde75 ./Core/Src/exercise4.o
- .debug_macro   0x000000000000ff7d       0x6d ./Core/Src/exercise4.o
- .debug_macro   0x000000000000ffea     0x34a2 ./Core/Src/exercise4.o
- .debug_macro   0x000000000001348c      0x174 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000013600       0x5c ./Core/Src/exercise4.o
- .debug_macro   0x000000000001365c      0x5bc ./Core/Src/exercise4.o
- .debug_macro   0x0000000000013c18      0x1b7 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000013dcf      0x1cb ./Core/Src/exercise4.o
- .debug_macro   0x0000000000013f9a      0x114 ./Core/Src/exercise4.o
- .debug_macro   0x00000000000140ae      0x1b2 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000014260       0x27 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000014287      0x12f ./Core/Src/exercise4.o
- .debug_macro   0x00000000000143b6      0x1bc ./Core/Src/exercise4.o
- .debug_macro   0x0000000000014572       0x34 ./Core/Src/exercise4.o
- .debug_macro   0x00000000000145a6       0x3c ./Core/Src/exercise4.o
- .debug_macro   0x00000000000145e2       0x57 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000014639       0x87 ./Core/Src/exercise4.o
- .debug_macro   0x00000000000146c0      0x183 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000014843      0x140 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000014983       0x69 ./Core/Src/exercise4.o
- .debug_macro   0x00000000000149ec       0x58 ./Core/Src/exercise4.o
- .debug_macro   0x0000000000014a44      0x19f ./Core/Src/main.o
- .debug_macro   0x0000000000014be3      0x191 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_macro   0x0000000000014d74      0x19b ./Core/Src/stm32f1xx_it.o
- .debug_macro   0x0000000000014f0f      0x182 ./Core/Src/system_stm32f1xx.o
- .debug_macro   0x0000000000015091      0x1a6 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_macro   0x0000000000015237      0x182 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_macro   0x00000000000153b9      0x1ed ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_macro   0x00000000000155a6      0x194 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+.debug_macro    0x0000000000000000    0x15739
+ .debug_macro   0x0000000000000000      0x19b ./Core/Src/exercise4.o
+ .debug_macro   0x000000000000019b      0xa9c ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000000c37      0x20f ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000000e46       0x2e ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000000e74       0x22 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000000e96       0x22 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000000eb8       0x8e ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000000f46       0x51 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000000f97      0x103 ./Core/Src/exercise4.o
+ .debug_macro   0x000000000000109a       0x6a ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000001104      0x1df ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000012e3       0x1c ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000012ff       0x22 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000001321       0xc3 ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000013e4      0xd23 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000002107     0xde75 ./Core/Src/exercise4.o
+ .debug_macro   0x000000000000ff7c       0x6d ./Core/Src/exercise4.o
+ .debug_macro   0x000000000000ffe9     0x34a2 ./Core/Src/exercise4.o
+ .debug_macro   0x000000000001348b      0x174 ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000135ff       0x5c ./Core/Src/exercise4.o
+ .debug_macro   0x000000000001365b      0x5bc ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000013c17      0x1b7 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000013dce      0x1cb ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000013f99      0x114 ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000140ad      0x1b2 ./Core/Src/exercise4.o
+ .debug_macro   0x000000000001425f       0x27 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000014286      0x12f ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000143b5      0x1bc ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000014571       0x34 ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000145a5       0x3c ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000145e1       0x57 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000014638       0x87 ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000146bf      0x183 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000014842      0x140 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000014982       0x69 ./Core/Src/exercise4.o
+ .debug_macro   0x00000000000149eb       0x58 ./Core/Src/exercise4.o
+ .debug_macro   0x0000000000014a43      0x19f ./Core/Src/main.o
+ .debug_macro   0x0000000000014be2      0x191 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_macro   0x0000000000014d73      0x19b ./Core/Src/stm32f1xx_it.o
+ .debug_macro   0x0000000000014f0e      0x182 ./Core/Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000015090      0x1a6 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_macro   0x0000000000015236      0x182 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_macro   0x00000000000153b8      0x1ed ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_macro   0x00000000000155a5      0x194 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
-.debug_line     0x0000000000000000     0x4d1e
- .debug_line    0x0000000000000000      0x6ad ./Core/Src/exercise4.o
- .debug_line    0x00000000000006ad      0x703 ./Core/Src/main.o
- .debug_line    0x0000000000000db0      0x65d ./Core/Src/stm32f1xx_hal_msp.o
- .debug_line    0x000000000000140d      0x71e ./Core/Src/stm32f1xx_it.o
- .debug_line    0x0000000000001b2b      0x6da ./Core/Src/system_stm32f1xx.o
- .debug_line    0x0000000000002205       0x86 ./Core/Startup/startup_stm32f103c6ux.o
- .debug_line    0x000000000000228b      0x907 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_line    0x0000000000002b92      0xaef ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_line    0x0000000000003681      0x98a ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_line    0x000000000000400b      0xd13 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+.debug_line     0x0000000000000000     0x4d1c
+ .debug_line    0x0000000000000000      0x6ab ./Core/Src/exercise4.o
+ .debug_line    0x00000000000006ab      0x703 ./Core/Src/main.o
+ .debug_line    0x0000000000000dae      0x65d ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_line    0x000000000000140b      0x71e ./Core/Src/stm32f1xx_it.o
+ .debug_line    0x0000000000001b29      0x6da ./Core/Src/system_stm32f1xx.o
+ .debug_line    0x0000000000002203       0x86 ./Core/Startup/startup_stm32f103c6ux.o
+ .debug_line    0x0000000000002289      0x907 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_line    0x0000000000002b90      0xaef ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_line    0x000000000000367f      0x98a ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_line    0x0000000000004009      0xd13 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
 .debug_str      0x0000000000000000    0x79967
  .debug_str     0x0000000000000000    0x7882b ./Core/Src/exercise4.o

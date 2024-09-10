@@ -1,2 +1,2 @@
-exercise4.c:206:6:display_number	24	static
-exercise4.c:220:6:exercise4_run	8	static
+exercise4.c:41:6:display_number	24	static
+exercise4.c:55:6:exercise4_run	8	static
