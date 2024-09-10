@@ -8,7 +8,7 @@
 #include"exercise5.h"
 
 
-int state_horizontal = RED;
+int state_horizontal = RED,
 	state_vertical = GREEN,
 	counter_horizontal = 5,
 	counter_vertical = 3;
@@ -97,7 +97,6 @@ void yellow_on_vertical()
 	HAL_GPIO_WritePin(LED_12_GPIO_Port, LED_12_Pin, GPIO_PIN_RESET); // yellow led on
 }
 
-int counter = 0;
 
 char seg[10] =
 {
@@ -187,39 +186,39 @@ void exercise5_run()
 
 
 	switch(state_vertical)
-		{
-			case RED:
-				red_on_vertical();
-				counter_vertical--;
-				display_number2(counter_vertical);
-				if (counter_vertical <= 0)
-				{
-					state_vertical = GREEN;
-					counter_vertical = 3;
-				}
-				break;
-			case GREEN:
-				green_on_vertical();
-				counter_vertical--;
-				display_number2(counter_vertical);
-				if (counter_vertical <= 0)
-				{
-					state_vertical = YELLOW;
-					counter_vertical = 2;
-				}
-				break;
-			case YELLOW:
-				yellow_on_vertical();
-				counter_vertical--;
-				display_number2(counter_vertical);
-				if (counter_vertical <= 0)
-				{
-					state_vertical = RED;
-					counter_vertical = 5;
-				}
-				break;
-			default:
-				break;
+	{
+		case RED:
+			red_on_vertical();
+			counter_vertical--;
+			display_number2(counter_vertical);
+			if (counter_vertical <= 0)
+			{
+				state_vertical = GREEN;
+				counter_vertical = 3;
+			}
+			break;
+		case GREEN:
+			green_on_vertical();
+			counter_vertical--;
+			display_number2(counter_vertical);
+			if (counter_vertical <= 0)
+			{
+				state_vertical = YELLOW;
+				counter_vertical = 2;
+			}
+			break;
+		case YELLOW:
+			yellow_on_vertical();
+			counter_vertical--;
+			display_number2(counter_vertical);
+			if (counter_vertical <= 0)
+			{
+				state_vertical = RED;
+				counter_vertical = 5;
+			}
+			break;
+		default:
+			break;
 		}
 }
 
