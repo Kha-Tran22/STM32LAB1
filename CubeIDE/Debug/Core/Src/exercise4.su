@@ -1,12 +1,2 @@
-exercise4.c:13:6:init_exercise4	4	static
-exercise4.c:15:6:display_0	8	static
-exercise4.c:26:6:display_1	8	static
-exercise4.c:37:6:display_2	8	static
-exercise4.c:48:6:display_3	8	static
-exercise4.c:59:6:display_4	8	static
-exercise4.c:70:6:display_5	8	static
-exercise4.c:81:6:display_6	8	static
-exercise4.c:92:6:display_7	8	static
-exercise4.c:103:6:display_8	8	static
-exercise4.c:114:6:display_9	8	static
-exercise4.c:125:6:exercise4_run	8	static
+exercise4.c:206:6:display_number	24	static
+exercise4.c:220:6:exercise4_run	8	static
