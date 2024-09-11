@@ -1,35 +1,19 @@
 /*
- * exercise6.c
+ * exercise7.c
  *
  *  Created on: Sep 11, 2024
  *      Author: tuank
  */
 
-#include "exercise6.h"
+#include <exercise6_7_8_9_10.h>
 
 
 int counter = 0;
 
-void init_exercise6(){}
+void init_exercise7(){}
 
-uint16_t LED[12] =
-{
-	GPIO_PIN_4,
-	GPIO_PIN_5,
-	GPIO_PIN_6,
-	GPIO_PIN_7,
-	GPIO_PIN_8,
-	GPIO_PIN_9,
-	GPIO_PIN_10,
-	GPIO_PIN_11,
-	GPIO_PIN_12,
-	GPIO_PIN_13,
-	GPIO_PIN_14,
-	GPIO_PIN_15
 
-};
-
-void led_on(int index)
+void clearAllClock()
 {
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4 , GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5 , GPIO_PIN_SET);
@@ -43,16 +27,11 @@ void led_on(int index)
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_13 , GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_14 , GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_15 , GPIO_PIN_SET);
-
-
-	HAL_GPIO_WritePin(GPIOA, LED[index], GPIO_PIN_RESET);
 }
 
-void exercise6_run()
+void exercise7_run()
 {
-	led_on(counter++);
-	if (counter >= 12)
-		counter = 0;
+	clearAllClock();
 }
 
 

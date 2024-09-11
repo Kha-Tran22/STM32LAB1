@@ -18,11 +18,12 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "exercise6.h"
+#include "exercise6_7_8_9_10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
