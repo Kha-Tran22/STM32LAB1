@@ -148,7 +148,6 @@ void led_on(int index)
  80001d6:	4808      	ldr	r0, [pc, #32]	; (80001f8 <led_on+0xac>)
  80001d8:	f000 fc16 	bl	8000a08 <HAL_GPIO_WritePin>
 
-
 	HAL_GPIO_WritePin(GPIOA, LED[index], GPIO_PIN_RESET);
  80001dc:	4a07      	ldr	r2, [pc, #28]	; (80001fc <led_on+0xb0>)
  80001de:	687b      	ldr	r3, [r7, #4]
@@ -185,7 +184,7 @@ void exercise6_run()
  8000216:	681b      	ldr	r3, [r3, #0]
  8000218:	2b0b      	cmp	r3, #11
  800021a:	dd02      	ble.n	8000222 <exercise6_run+0x22>
-		counter = 0;
+			counter = 0;
  800021c:	4b02      	ldr	r3, [pc, #8]	; (8000228 <exercise6_run+0x28>)
  800021e:	2200      	movs	r2, #0
  8000220:	601a      	str	r2, [r3, #0]
