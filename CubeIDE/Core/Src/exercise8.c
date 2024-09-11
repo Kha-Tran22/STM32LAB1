@@ -5,12 +5,12 @@
  *      Author: tuank
  */
 
-#include "exercise7.h"
+#include "exercise8.h"
 
 
 int counter = 0;
 
-void init_exercise7(){}
+void init_exercise8(){}
 
 uint16_t LED[12] =
 {
@@ -64,7 +64,7 @@ void clearAllClock()
 }
 
 
-void exercise7_run()
+void exercise8_run()
 {
 	clearAllClock();
 }
