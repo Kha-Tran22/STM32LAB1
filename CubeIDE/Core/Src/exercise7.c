@@ -1,5 +1,5 @@
 /*
- * exercise6.c
+ * exercise7.c
  *
  *  Created on: Sep 11, 2024
  *      Author: tuank
