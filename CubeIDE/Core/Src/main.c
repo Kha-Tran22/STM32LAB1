@@ -18,11 +18,12 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "exercise6.h"
+#include "exercise7.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -93,7 +94,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  exercise6_run();
+	  exercise7_run();
 
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
