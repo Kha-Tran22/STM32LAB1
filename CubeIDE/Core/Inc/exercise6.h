@@ -14,4 +14,5 @@ void init_exercise6();
 void exercise6_run();
 
 
+
 #endif /* INC_EXERCISE6_H_ */
