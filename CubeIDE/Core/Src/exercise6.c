@@ -56,7 +56,9 @@ void exercise6_run()
 	reset_state();
 	led_on(counter++);
 	if (counter >= 12)
-			counter = 0;
+	{
+		counter = 0;
+	}
 }
 
 

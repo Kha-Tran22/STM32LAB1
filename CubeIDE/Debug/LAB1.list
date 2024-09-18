@@ -197,10 +197,12 @@ void exercise6_run()
  8000226:	681b      	ldr	r3, [r3, #0]
  8000228:	2b0b      	cmp	r3, #11
  800022a:	dd02      	ble.n	8000232 <exercise6_run+0x26>
-			counter = 0;
+	{
+		counter = 0;
  800022c:	4b02      	ldr	r3, [pc, #8]	; (8000238 <exercise6_run+0x2c>)
  800022e:	2200      	movs	r2, #0
  8000230:	601a      	str	r2, [r3, #0]
+	}
 }
  8000232:	bf00      	nop
  8000234:	bd80      	pop	{r7, pc}
